@@ -1,8 +1,3 @@
-version: "3.9"
 services:
   app:
     build: .
-    # The 'ports' section has been removed to prevent conflicts.
-    # The 'volumes' section is removed as it's not needed for production deployment on Easypanel.
-    # The 'env_file' is also removed, as you will set environment variables in the Easypanel UI.
-    # We remove 'depends_on' because Easypanel will manage the service startup order.
